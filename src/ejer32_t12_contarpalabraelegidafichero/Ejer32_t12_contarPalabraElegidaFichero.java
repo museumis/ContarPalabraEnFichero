@@ -14,12 +14,22 @@ import java.util.Scanner;
  */
 public class Ejer32_t12_contarPalabraElegidaFichero {
 
+    /**
+     *
+     * @param texto
+     * @return
+     */
     public static String pedirTexto(String texto) {
         Scanner entrada = new Scanner(System.in);
         System.out.print(texto);
         return entrada.nextLine();
     }
 
+    /**
+     *
+     * @param fichero
+     * @param palabra
+     */
     public static void flujoLectura(File fichero, String palabra) {
 
         String linea;
@@ -77,6 +87,10 @@ public class Ejer32_t12_contarPalabraElegidaFichero {
 
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         String palabra;
         File fichero;
